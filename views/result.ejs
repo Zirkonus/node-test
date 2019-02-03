@@ -1,0 +1,20 @@
+<h2>Result</h2>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name of the service</th>
+      <th scope="col">The new estimated price</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% for(var i=0; i<prices.length;i++) { %>
+    <tr>
+      <th scope="row"><%= i + 1 %></th>
+      <td>After<%= prices[i].localized_display_name %></td>
+      <td><%= prices[i].currency_code %><%= (Number(prices[i].low_estimate) / 5 * 4).toFixed(2) %>-<%= (Number(prices[i].high_estimate) / 5 * 4).toFixed(2) %></td>
+    </tr>
+  <% } %>
+  </tbody>
+</table>
+

@@ -1,0 +1,8 @@
+body {background-color: #EAEDED; color: #212F3D;}
+.block {text-align: center; width: 50%; margin-left: 25%;}
+h1 {margin: 1em 0; font-size: 3.5em;}
+h2 {margin: 1em 0; font-size: 2.5em;}
+.small {margin-bottom: .8em; font-size: .75em;}
+.error {margin-top: 50px; color: #C0392B;}
+.inprogress {margin-top: 50px;}
+img.image404 {padding: 2px; border: 1px solid #212F3D; background-color: #fff;}

@@ -1,0 +1,19 @@
+<% include header.ejs %>
+<body class="block">
+    <h1>AfterUber Estimation Service<sup>*</sup></h1>
+    <form>
+        <div class="form-group">
+            <label for="StartAddress">Start address</label>
+            <input type="text" name="StartAddress" class="form-control" id="StartAddress" placeholder="Enter start address" value="1452 56th Street, Brooklyn, NY 11219"/>
+        </div>
+        <div class="form-group">
+            <label for="DestinationAddress">Destination address</label>
+            <input type="text" name="DestinationAddress" class="form-control" id="DestinationAddress" placeholder="Enter destination address" value=""/>
+        </div>
+        <div class="small"><sup>*</sup> This service uses Google Geocoding API to better understand provided by your address.</div>
+        <button type="button" id="SendData" class="btn btn-primary">Send</button>
+        <button type="button" id="ClearData" class="btn btn-secondary">Clear</button>
+    </form>
+    <div id="result"></div>
+</body>
+<% include footer.ejs %>
